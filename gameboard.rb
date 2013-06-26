@@ -11,7 +11,7 @@ class GameBoard
   def check_yourself(guess)
     guess_num = guess.to_i
     if @already_guessed.include?(guess_num)
-      puts "You already guessed that cell! Wasting a guess seems to be an appropriate punishment for your stupidity."
+      puts "You already guessed that! Wasting a guess seems to be an appropriate punishment for your stupidity."
     elsif @cells.include?(guess_num) == false
       puts "That's not even a valid number! Still counts as a guess, though."
     elsif @cruiser.include?(guess_num)
